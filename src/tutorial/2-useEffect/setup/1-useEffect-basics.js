@@ -9,9 +9,12 @@ const UseEffectBasics = () => {
     if(value >= 1){
       document.title = `New Messages(${value})`;
     }
-    
-  });
+  }, [value]);
   console.log('render component');
+
+  useEffect(()=>{
+    console.log('Hello World');
+  },[]);
 
   return <>
     <h1>{value}</h1>
