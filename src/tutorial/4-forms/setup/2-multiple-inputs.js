@@ -84,7 +84,7 @@ const handleSubmit = (e) => {
           </audiodiv>
           <button type='submit' onClick={handleSubmit}>add person</button>
         </form>
-        
+
         {people.map((person, index) => {
           const { id, firstName, email, age } = person;
           return (
